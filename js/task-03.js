@@ -26,4 +26,6 @@ const imagesGallery = images.map(option => {
   return elementsLi
 })
 
-console.log(galleryUl.append(...imagesGallery))
+for (let i = 0; i <= imagesGallery.length; i += 1){
+  console.log(galleryUl.insertAdjacentHTML('afterbegin', imagesGallery[i].outerHTML))
+}
